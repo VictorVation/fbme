@@ -20,7 +20,7 @@ $ fbme <url> <bitly-api-token>
 ## Installation
 
 ```
-$ npm install fbme
+$ sudo npm install -g fbme
 ```
 
 Optional: If you don't want to enter your bit.ly API key every time, add the environment variable called `BITLY_TOKEN` with you API key. Don't know how to do that? Do this, replacing `YOUR_TOKEN_HERE` with your API key.
