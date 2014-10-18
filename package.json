@@ -1,0 +1,16 @@
+{
+  "name": "fbme",
+  "version": "0.1.0",
+  "description": "Get the on.fb.me shortlink for a Facebook page.",
+  "main": "fbme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Szeto",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.45.0"
+  },
+  "preferGlobal": "true",
+  "bin": { "fbme": "fbme.js" }
+}
