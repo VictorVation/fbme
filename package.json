@@ -1,6 +1,6 @@
 {
   "name": "fbme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get the on.fb.me shortlink for a Facebook page.",
   "main": "fbme.js",
   "scripts": {
@@ -12,5 +12,11 @@
     "request": "^2.45.0"
   },
   "preferGlobal": "true",
-  "bin": { "fbme": "fbme.js" }
+  "bin": {
+    "fbme": "fbme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:VictorVation/fbme.git"
+  }
 }
