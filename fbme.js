@@ -1,7 +1,10 @@
 #! /usr/bin/env node
 
-var BITLY_TOKEN = process.argv[3] || process.env.BITLY_TOKEN || '';
-var url = process.argv[2] || '';
+var request = require('request');
+var argv = require('minimist')(process.argv.slice(2));
+
+var BITLY_TOKEN = argv._[1] || process.env.BITLY_TOKEN || '';
+var url = argv._[0] || '';
 
 if (url == null || BITLY_TOKEN == null) {
   console.error("usage: fbme <url> [<bitly api token>]")
@@ -18,7 +21,7 @@ var params = {
   longUrl: url
 }
 
-require('request').get({
+request.get({
   url: 'https://api-ssl.bitly.com/v3/shorten',
   qs: params,
   useQuerystring: 'true'

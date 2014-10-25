@@ -9,6 +9,7 @@
   "author": "Victor Szeto",
   "license": "MIT",
   "dependencies": {
+    "minimist": "^1.1.0",
     "request": "^2.45.0"
   },
   "preferGlobal": "true",
