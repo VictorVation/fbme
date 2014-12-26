@@ -29,7 +29,7 @@ request.get({
   var body = JSON.parse(body);
 
   if (!err && body.status_code == 200) {
-    console.log(body.data.url);
+    console.log(body.data.url.replace(/.*?:\/\//g, ""));
   }
   else {
     console.error("Error accessing bit.ly api:", body.status_txt);
