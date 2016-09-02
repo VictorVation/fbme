@@ -3,10 +3,10 @@
 var request = require('request');
 var argv = require('minimist')(process.argv.slice(2));
 
-var BITLY_TOKEN = argv._[1] || process.env.BITLY_TOKEN || '';
 var url = argv._[0] || '';
+var api_token = argv._[1] || process.env.BITLY_TOKEN || '';
 
-if (url == null || BITLY_TOKEN == null) {
+if (url == null || api_token == null) {
   console.error("usage: fbme <url> [<bitly api token>]")
   process.exit(1);
 }
@@ -17,7 +17,7 @@ if (url.indexOf('facebook.com') === -1) {
 }
 
 var params = {
-  access_token: BITLY_TOKEN,
+  access_token: api_token,
   longUrl: url
 }
 
