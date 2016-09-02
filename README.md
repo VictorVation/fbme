@@ -14,13 +14,13 @@ http://on.fb.me/1wUdJXQ
 You can omit the bit.ly API token if you create an environment variable called `BITLY_TOKEN` containing the token.
 
 ```
-$ fbme <url> <bitly-api-token>
+fbme <url> <bitly-api-token>
 ```
 
 ## Installation
 
 ```
-$ sudo npm install -g fbme
+$ npm install -g fbme
 ```
 
 Optional: If you don't want to enter your bit.ly API key every time, add the environment variable called `BITLY_TOKEN` with you API key. Don't know how to do that? Do this, replacing `YOUR_TOKEN_HERE` with your API key.
